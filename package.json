@@ -1,0 +1,20 @@
+{
+  "name": "test-selenium-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/selenium-cucumber-js/index.js",
+    "build:dev:image": "./scripts/build:dev:image.sh",
+    "start": "./scripts/start.sh && open ./features/reports/cucumber-report.html",
+    "stop": "./scripts/stop.sh",
+    "rm": "./scripts/rm.sh",
+    "clean": "./scripts/clean.sh",
+    "cycle": "./scripts/clean.sh && npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "selenium-cucumber-js": "^1.6.2"
+  }
+}

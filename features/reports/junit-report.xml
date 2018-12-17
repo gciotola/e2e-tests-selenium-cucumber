@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="checking-for-3d-views;checking-home-page-listed-spaces" tests="2" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="/app/features/headbox-homepage.feature">
+            </property>
+        </properties>
+        <testcase name="When I open Headbox site at &quot;https://www.headbox.com/&quot;" classname="checking-for-3d-views;checking-home-page-listed-spaces" time="3.9340158">
+        </testcase>
+        <testcase name="Then I should see at least &quot;1&quot; element with class &quot;.hb-3d-cube&quot;" classname="checking-for-3d-views;checking-home-page-listed-spaces" time="0.0863589">
+        </testcase>
+    </testsuite>
+    <testsuite name="searching-for-locations;headbox-search-for-hotel-in-london" tests="2" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="/app/features/headbox-search.feature">
+            </property>
+        </properties>
+        <testcase name="When I search Headbox for &quot;hotel&quot; in &quot;London&quot;" classname="searching-for-locations;headbox-search-for-hotel-in-london" time="4.9881073">
+        </testcase>
+        <testcase name="Then I should see some results" classname="searching-for-locations;headbox-search-for-hotel-in-london" time="2.8948182">
+        </testcase>
+    </testsuite>
+    <testsuite name="searching-for-locations;headbox-checking-meta-title-in-serp" tests="2" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="/app/features/headbox-search.feature">
+            </property>
+        </properties>
+        <testcase name="When I search Headbox for &quot;Hotel&quot; in &quot;London&quot;" classname="searching-for-locations;headbox-checking-meta-title-in-serp" time="4.9940199">
+        </testcase>
+        <testcase name="Then Title of the page should contains &quot;London&quot;" classname="searching-for-locations;headbox-checking-meta-title-in-serp" time="1.9361794">
+        </testcase>
+    </testsuite>
+</testsuites>

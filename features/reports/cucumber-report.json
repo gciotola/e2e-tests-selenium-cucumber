@@ -1,0 +1,168 @@
+[
+  {
+    "description": "  As an headbox project manager\n  In order to improve quality of the business\n  I want that at least 1 venue with 3D view is listed in home page",
+    "elements": [
+      {
+        "id": "checking-for-3d-views;checking-home-page-listed-spaces",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Checking home page listed spaces",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I open Headbox site at \"https://www.headbox.com/\"",
+            "result": {
+              "status": "passed",
+              "duration": 3934015800
+            },
+            "line": 7,
+            "match": {
+              "location": "/app/features/step-definitions/headbox-homepage-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see at least \"1\" element with class \".hb-3d-cube\"",
+            "result": {
+              "status": "passed",
+              "duration": 86358900
+            },
+            "line": 8,
+            "match": {
+              "location": "/app/features/step-definitions/headbox-homepage-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 121524900
+            },
+            "hidden": true,
+            "match": {
+              "location": "/app/node_modules/selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checking-for-3d-views",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Checking for 3D views",
+    "tags": [],
+    "uri": "/app/features/headbox-homepage.feature"
+  },
+  {
+    "description": "  As an headbox user\n  In order to find out a location for my party\n  I want to be able to search for hotels for my city",
+    "elements": [
+      {
+        "id": "searching-for-locations;headbox-search-for-hotel-in-london",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Headbox search for Hotel in London",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search Headbox for \"hotel\" in \"London\"",
+            "result": {
+              "status": "passed",
+              "duration": 4988107300
+            },
+            "line": 7,
+            "match": {
+              "location": "/app/features/step-definitions/headbox-search-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see some results",
+            "result": {
+              "status": "passed",
+              "duration": 2894818200
+            },
+            "line": 8,
+            "match": {
+              "location": "/app/features/step-definitions/headbox-search-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 174511100
+            },
+            "hidden": true,
+            "match": {
+              "location": "/app/node_modules/selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "searching-for-locations;headbox-checking-meta-title-in-serp",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Headbox checking meta title in serp",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search Headbox for \"Hotel\" in \"London\"",
+            "result": {
+              "status": "passed",
+              "duration": 4994019900
+            },
+            "line": 15,
+            "match": {
+              "location": "/app/features/step-definitions/headbox-search-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Title of the page should contains \"London\"",
+            "result": {
+              "status": "passed",
+              "duration": 1936179400
+            },
+            "line": 16,
+            "match": {
+              "location": "/app/features/step-definitions/headbox-search-steps.js:16"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 226092300
+            },
+            "hidden": true,
+            "match": {
+              "location": "/app/node_modules/selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "searching-for-locations",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Searching for locations",
+    "tags": [],
+    "uri": "/app/features/headbox-search.feature"
+  }
+]

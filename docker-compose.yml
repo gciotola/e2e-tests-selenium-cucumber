@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+
+  selenium-cucumber-test:
+    build:
+      context: .
+      dockerfile: docker/Dev.dockerfile
+    image:
+      headbox-ng-dev/selenium-cucumber-test
+    command: [
+      "node",
+      "./node_modules/selenium-cucumber-js/index.js"
+    ]
+    volumes:
+      - "./selenium-cucumber-js-docker.json:/app/selenium-cucumber-js.json"
+      - "./customDriver.js:/app/customDriver.js"
+      - "./package.json:/app/package.json"
+      - "./features:/app/features"
+    ports:
+      - "8082:5000"
+    environment:
+      - NODE_ENV=development
+      - EXECUTION_ENVIRONMENT=development
+
+networks:
+  default:
+    external:
+      name: headbox_dev
